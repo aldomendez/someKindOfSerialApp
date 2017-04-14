@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class MainConsole
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainConsole))
         Me.nmrA1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrB1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrC1 = New System.Windows.Forms.NumericUpDown()
@@ -86,6 +87,8 @@ Partial Class Form1
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.lblStatusText = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripProgressBar = New System.Windows.Forms.ToolStripProgressBar()
+        Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -523,9 +526,9 @@ Partial Class Form1
         Me.Label26.AutoSize = True
         Me.Label26.Location = New System.Drawing.Point(10, 21)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(69, 13)
+        Me.Label26.Size = New System.Drawing.Size(60, 13)
         Me.Label26.TabIndex = 50
-        Me.Label26.Text = "Repeticiones"
+        Me.Label26.Text = "Repetitions"
         '
         'Button1
         '
@@ -533,7 +536,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 52
-        Me.Button1.Text = "Enviar"
+        Me.Button1.Text = "Start Cycle"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'configMgrDataSet
@@ -576,7 +579,7 @@ Partial Class Form1
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblStatusText, Me.ToolStripProgressBar})
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSplitButton1, Me.ToolStripProgressBar, Me.lblStatusText})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 382)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(332, 22)
@@ -593,7 +596,23 @@ Partial Class Form1
         Me.ToolStripProgressBar.Name = "ToolStripProgressBar"
         Me.ToolStripProgressBar.Size = New System.Drawing.Size(100, 16)
         '
-        'Form1
+        'ToolStripSplitButton1
+        '
+        Me.ToolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem})
+        Me.ToolStripSplitButton1.Image = CType(resources.GetObject("ToolStripSplitButton1.Image"), System.Drawing.Image)
+        Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
+        Me.ToolStripSplitButton1.Size = New System.Drawing.Size(51, 20)
+        Me.ToolStripSplitButton1.Text = "Tools"
+        '
+        'OptionsToolStripMenuItem
+        '
+        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OptionsToolStripMenuItem.Text = "Options"
+        '
+        'MainConsole
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -652,8 +671,8 @@ Partial Class Form1
         Me.Controls.Add(Me.nmrC1)
         Me.Controls.Add(Me.nmrB1)
         Me.Controls.Add(Me.nmrA1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "MainConsole"
+        Me.Text = "Main Console"
         CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -752,4 +771,6 @@ Partial Class Form1
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents lblStatusText As ToolStripStatusLabel
     Friend WithEvents ToolStripProgressBar As ToolStripProgressBar
+    Friend WithEvents ToolStripSplitButton1 As ToolStripSplitButton
+    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
 End Class

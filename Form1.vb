@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MainConsole
 
     Public colors = New Object() {
         Color.AliceBlue,
@@ -101,7 +101,7 @@
     Public nmrUpDownControlers As NumericUpDown() = {}
 
     Private Sub NumericUpDown_ValueChanged_massAssignedController(sender As NumericUpDown, e As EventArgs)
-        Call asignColor(sender)
+        Call AsignColor(sender)
         sender.ForeColor = Color.Gainsboro
     End Sub
     Private Sub AsignColor(ByRef target)
@@ -113,10 +113,10 @@
 
             If target.value < colors.length Then
                 Dim newColor = colors(Val(target.value))
-                Dim a As Byte = normToRange(newColor.A + 128, 0, 256)
-                Dim r As Byte = normToRange(newColor.R + 128, 0, 256)
-                Dim g As Byte = normToRange(newColor.G + 128, 0, 256)
-                Dim b As Byte = normToRange(newColor.B + 128, 0, 256)
+                Dim a As Byte = NormToRange(newColor.A + 128, 0, 256)
+                Dim r As Byte = NormToRange(newColor.R + 128, 0, 256)
+                Dim g As Byte = NormToRange(newColor.G + 128, 0, 256)
+                Dim b As Byte = NormToRange(newColor.B + 128, 0, 256)
                 target.BackColor = Color.FromArgb(r, g, b)
                 target.forecolor = newColor
             End If
@@ -186,4 +186,7 @@
         FindMaxValueInRockers = currentMaximum
     End Function
 
+    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
+
+    End Sub
 End Class
