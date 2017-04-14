@@ -41,7 +41,7 @@ Partial Class Form1
         Me.nmrE2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrD2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrC2 = New System.Windows.Forms.NumericUpDown()
-        Me.mnrB2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrB2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrA2 = New System.Windows.Forms.NumericUpDown()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -94,7 +94,7 @@ Partial Class Form1
         CType(Me.nmrE2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrD2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrC2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mnrB2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrB2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrA2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrE3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrD3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -264,12 +264,12 @@ Partial Class Form1
         Me.nmrC2.Size = New System.Drawing.Size(55, 20)
         Me.nmrC2.TabIndex = 12
         '
-        'mnrB2
+        'nmrB2
         '
-        Me.mnrB2.Location = New System.Drawing.Point(74, 139)
-        Me.mnrB2.Name = "mnrB2"
-        Me.mnrB2.Size = New System.Drawing.Size(55, 20)
-        Me.mnrB2.TabIndex = 11
+        Me.nmrB2.Location = New System.Drawing.Point(74, 139)
+        Me.nmrB2.Name = "nmrB2"
+        Me.nmrB2.Size = New System.Drawing.Size(55, 20)
+        Me.nmrB2.TabIndex = 11
         '
         'nmrA2
         '
@@ -572,6 +572,7 @@ Partial Class Form1
         Me.nmrRepeticiones.Name = "nmrRepeticiones"
         Me.nmrRepeticiones.Size = New System.Drawing.Size(55, 20)
         Me.nmrRepeticiones.TabIndex = 54
+        Me.nmrRepeticiones.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'StatusStrip1
         '
@@ -639,7 +640,7 @@ Partial Class Form1
         Me.Controls.Add(Me.nmrE2)
         Me.Controls.Add(Me.nmrD2)
         Me.Controls.Add(Me.nmrC2)
-        Me.Controls.Add(Me.mnrB2)
+        Me.Controls.Add(Me.nmrB2)
         Me.Controls.Add(Me.nmrA2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -661,7 +662,7 @@ Partial Class Form1
         CType(Me.nmrE2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrD2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrC2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mnrB2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrB2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrA2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrE3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrD3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -706,7 +707,7 @@ Partial Class Form1
     Friend WithEvents nmrE2 As NumericUpDown
     Friend WithEvents nmrD2 As NumericUpDown
     Friend WithEvents nmrC2 As NumericUpDown
-    Friend WithEvents mnrB2 As NumericUpDown
+    Friend WithEvents nmrB2 As NumericUpDown
     Friend WithEvents nmrA2 As NumericUpDown
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label

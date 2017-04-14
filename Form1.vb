@@ -98,6 +98,7 @@
         Color.WhiteSmoke,
         Color.YellowGreen
     }
+    Public nmrUpDownControlers As NumericUpDown() = {}
 
     Private Sub NumericUpDown_ValueChanged_massAssignedController(sender As NumericUpDown, e As EventArgs)
         Call asignColor(sender)
@@ -137,31 +138,48 @@
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+
+        Dim letters As String() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"}
+        For letterIndex As Integer = 0 To 5
+            For i As Integer = 1 To 5
+                Dim ctrl = Me.Controls.Find("nmr" & letters(letterIndex) & i, True)
+                If ctrl IsNot Nothing Then
+                    For Each control In ctrl
+                        nmrUpDownControlers = nmrUpDownControlers.Concat({control}).ToArray
+                    Next
+                End If
+            Next
+        Next
+        Console.WriteLine("Hay " & nmrUpDownControlers.Length & " nmrUpDownControlers")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim letters As String() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"}
         Dim repetitionsInThisEvent = nmrRepeticiones.Value
 
         lblStatusText.Text = "Iniciando iteraciones"
         ToolStripProgressBar.Value = 0
 
-        For reps = 1 To repetitionsInThisEvent
-            For letterIndex As Integer = 0 To 5
-                For i As Integer = 1 To 5
-                    Dim ctrl = Me.Controls.Find("nmr" & letters(letterIndex) & i, True)
-                    If ctrl IsNot Nothing Then
-                        For Each control In ctrl
-                            control.Text = "100"
+        Dim maxValue As Integer = FindMaxValueInRockers()
 
-                        Next
-                    End If
-                Next
+        For reps = 1 To repetitionsInThisEvent
+            For Each control In nmrUpDownControlers
             Next
+
             lblStatusText.Text = "Iteracion " & reps & " completada de " & repetitionsInThisEvent
             ToolStripProgressBar.Value = (repetitionsInThisEvent / 100) * reps
             MsgBox("Iteracion " & reps & " completada", MsgBoxStyle.OkCancel, "Informacion")
         Next
+
         lblStatusText.Text = "Iteraciones completadas"
     End Sub
+
+    Private Function FindMaxValueInRockers()
+        Dim currentMaximum As Integer = 0
+        For Each control In nmrUpDownControlers
+            If currentMaximum < control.Value Then currentMaximum = control.Value
+            control.BackColor = Color.Tomato
+        Next
+        FindMaxValueInRockers = currentMaximum
+    End Function
+
 End Class
