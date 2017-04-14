@@ -128,6 +128,7 @@
         NormToRange = val Mod max
     End Function
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Try
             For Each control As Control In Me.Controls
                 Dim target As NumericUpDown = TryCast(control, NumericUpDown)
@@ -164,8 +165,8 @@
         For reps = 1 To repetitionsInThisEvent
             For runningValue As Integer = 0 To maxValue
                 For Each control In nmrUpDownControlers
-                    If control.Value = runningValue Then
-                        Console.WriteLine(control.Name.Substring(3, 2) & ":" & control.Value)
+                    If control.Value >= runningValue Then
+                        Console.WriteLine(control.Name.Substring(3, 2) & " : " & runningValue & " : " & control.Value)
                     End If
                 Next
             Next
@@ -186,7 +187,7 @@
         FindMaxValueInRockers = currentMaximum
     End Function
 
-    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
-
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.Show()
     End Sub
 End Class

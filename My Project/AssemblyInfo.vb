@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,11 +9,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("WindowsApp1")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Hewlett-Packard")>
-<Assembly: AssemblyProduct("WindowsApp1")>
-<Assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2017")>
+<Assembly: AssemblyTitle("Arduino Console Controller")>
+<Assembly: AssemblyDescription("Consola para enviar informacion estructurada a la")>
+<Assembly: AssemblyCompany("Lap-Technologies")>
+<Assembly: AssemblyProduct("Arduino Console Controller")>
+<Assembly: AssemblyCopyright("Copyright © Lap-Technologies 2017")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("en-US")>

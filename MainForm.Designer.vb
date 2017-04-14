@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainConsole
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MainConsole
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainConsole))
@@ -77,18 +77,12 @@ Partial Class MainConsole
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.com1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.configMgrDataSet = New System.Data.DataSet()
-        Me.DataTable1 = New System.Data.DataTable()
-        Me.DataColumn1 = New System.Data.DataColumn()
-        Me.DataColumn2 = New System.Data.DataColumn()
-        Me.DataColumn3 = New System.Data.DataColumn()
-        Me.DataColumn4 = New System.Data.DataColumn()
         Me.nmrRepeticiones = New System.Windows.Forms.NumericUpDown()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.lblStatusText = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripProgressBar = New System.Windows.Forms.ToolStripProgressBar()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripProgressBar = New System.Windows.Forms.ToolStripProgressBar()
+        Me.lblStatusText = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,8 +108,6 @@ Partial Class MainConsole
         CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.configMgrDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrRepeticiones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -539,36 +531,6 @@ Partial Class MainConsole
         Me.Button1.Text = "Start Cycle"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'configMgrDataSet
-        '
-        Me.configMgrDataSet.DataSetName = "ConfigManager"
-        Me.configMgrDataSet.Tables.AddRange(New System.Data.DataTable() {Me.DataTable1})
-        '
-        'DataTable1
-        '
-        Me.DataTable1.Columns.AddRange(New System.Data.DataColumn() {Me.DataColumn1, Me.DataColumn2, Me.DataColumn3, Me.DataColumn4})
-        Me.DataTable1.Constraints.AddRange(New System.Data.Constraint() {New System.Data.UniqueConstraint("Constraint1", New String() {"id"}, True)})
-        Me.DataTable1.PrimaryKey = New System.Data.DataColumn() {Me.DataColumn3}
-        Me.DataTable1.TableName = "config"
-        '
-        'DataColumn1
-        '
-        Me.DataColumn1.ColumnName = "name"
-        '
-        'DataColumn2
-        '
-        Me.DataColumn2.ColumnName = "strValue"
-        '
-        'DataColumn3
-        '
-        Me.DataColumn3.AllowDBNull = False
-        Me.DataColumn3.ColumnName = "id"
-        '
-        'DataColumn4
-        '
-        Me.DataColumn4.ColumnName = "boolValue"
-        Me.DataColumn4.DataType = GetType(Boolean)
-        '
         'nmrRepeticiones
         '
         Me.nmrRepeticiones.Location = New System.Drawing.Point(87, 17)
@@ -586,31 +548,31 @@ Partial Class MainConsole
         Me.StatusStrip1.TabIndex = 55
         Me.StatusStrip1.Text = "StatusStrip1"
         '
-        'lblStatusText
-        '
-        Me.lblStatusText.Name = "lblStatusText"
-        Me.lblStatusText.Size = New System.Drawing.Size(0, 17)
-        '
-        'ToolStripProgressBar
-        '
-        Me.ToolStripProgressBar.Name = "ToolStripProgressBar"
-        Me.ToolStripProgressBar.Size = New System.Drawing.Size(100, 16)
-        '
         'ToolStripSplitButton1
         '
         Me.ToolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem})
+        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
         Me.ToolStripSplitButton1.Image = CType(resources.GetObject("ToolStripSplitButton1.Image"), System.Drawing.Image)
         Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
         Me.ToolStripSplitButton1.Size = New System.Drawing.Size(51, 20)
         Me.ToolStripSplitButton1.Text = "Tools"
         '
-        'OptionsToolStripMenuItem
+        'ToolStripProgressBar
         '
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OptionsToolStripMenuItem.Text = "Options"
+        Me.ToolStripProgressBar.Name = "ToolStripProgressBar"
+        Me.ToolStripProgressBar.Size = New System.Drawing.Size(100, 16)
+        '
+        'lblStatusText
+        '
+        Me.lblStatusText.Name = "lblStatusText"
+        Me.lblStatusText.Size = New System.Drawing.Size(0, 17)
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
         '
         'MainConsole
         '
@@ -671,6 +633,7 @@ Partial Class MainConsole
         Me.Controls.Add(Me.nmrC1)
         Me.Controls.Add(Me.nmrB1)
         Me.Controls.Add(Me.nmrA1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "MainConsole"
         Me.Text = "Main Console"
         CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -698,8 +661,6 @@ Partial Class MainConsole
         CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.configMgrDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrRepeticiones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
@@ -761,16 +722,10 @@ Partial Class MainConsole
     Friend WithEvents Label26 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents com1 As IO.Ports.SerialPort
-    Friend WithEvents configMgrDataSet As DataSet
-    Friend WithEvents DataTable1 As DataTable
-    Friend WithEvents DataColumn1 As DataColumn
-    Friend WithEvents DataColumn2 As DataColumn
-    Friend WithEvents DataColumn3 As DataColumn
-    Friend WithEvents DataColumn4 As DataColumn
     Friend WithEvents nmrRepeticiones As NumericUpDown
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents lblStatusText As ToolStripStatusLabel
     Friend WithEvents ToolStripProgressBar As ToolStripProgressBar
     Friend WithEvents ToolStripSplitButton1 As ToolStripSplitButton
-    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
 End Class
