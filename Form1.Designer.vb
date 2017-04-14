@@ -22,11 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrA1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrB1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrC1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrD1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrE1 = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -37,107 +37,107 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrE2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrD2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrC2 = New System.Windows.Forms.NumericUpDown()
+        Me.mnrB2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrA2 = New System.Windows.Forms.NumericUpDown()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown15 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrE3 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrD3 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrC3 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrB3 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrA3 = New System.Windows.Forms.NumericUpDown()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown17 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown18 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown19 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown20 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrE4 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrD4 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrC4 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrB4 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrA4 = New System.Windows.Forms.NumericUpDown()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.NumericUpDown21 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown22 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown23 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown24 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown25 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrE5 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrD5 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrC5 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrB5 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrA5 = New System.Windows.Forms.NumericUpDown()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrD1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrE1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrE2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrD2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrC2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mnrB2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrA2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrE3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrD3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrC3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrB3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrA3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrE4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrD4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrC4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrB4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrA4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrE5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrD5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'NumericUpDown1
+        'nmrA1
         '
-        Me.NumericUpDown1.BackColor = System.Drawing.Color.White
-        Me.NumericUpDown1.Location = New System.Drawing.Point(13, 90)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown1.TabIndex = 0
+        Me.nmrA1.BackColor = System.Drawing.Color.White
+        Me.nmrA1.Location = New System.Drawing.Point(13, 90)
+        Me.nmrA1.Name = "nmrA1"
+        Me.nmrA1.Size = New System.Drawing.Size(55, 20)
+        Me.nmrA1.TabIndex = 0
         '
-        'NumericUpDown2
+        'nmrB1
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(74, 90)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown2.TabIndex = 1
+        Me.nmrB1.Location = New System.Drawing.Point(74, 90)
+        Me.nmrB1.Name = "nmrB1"
+        Me.nmrB1.Size = New System.Drawing.Size(55, 20)
+        Me.nmrB1.TabIndex = 1
         '
-        'NumericUpDown3
+        'nmrC1
         '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(135, 90)
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown3.TabIndex = 2
+        Me.nmrC1.Location = New System.Drawing.Point(135, 90)
+        Me.nmrC1.Name = "nmrC1"
+        Me.nmrC1.Size = New System.Drawing.Size(55, 20)
+        Me.nmrC1.TabIndex = 2
         '
-        'NumericUpDown4
+        'nmrD1
         '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(196, 90)
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown4.TabIndex = 3
+        Me.nmrD1.Location = New System.Drawing.Point(196, 90)
+        Me.nmrD1.Name = "nmrD1"
+        Me.nmrD1.Size = New System.Drawing.Size(55, 20)
+        Me.nmrD1.TabIndex = 3
         '
-        'NumericUpDown5
+        'nmrE1
         '
-        Me.NumericUpDown5.Location = New System.Drawing.Point(257, 90)
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown5.TabIndex = 4
+        Me.nmrE1.Location = New System.Drawing.Point(257, 90)
+        Me.nmrE1.Name = "nmrE1"
+        Me.nmrE1.Size = New System.Drawing.Size(55, 20)
+        Me.nmrE1.TabIndex = 4
         '
         'Label1
         '
@@ -191,7 +191,7 @@ Partial Class Form1
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(20, 13)
         Me.Label6.TabIndex = 19
-        Me.Label6.Text = "E1"
+        Me.Label6.Text = "E2"
         '
         'Label7
         '
@@ -200,7 +200,7 @@ Partial Class Form1
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(21, 13)
         Me.Label7.TabIndex = 18
-        Me.Label7.Text = "D1"
+        Me.Label7.Text = "D2"
         '
         'Label8
         '
@@ -209,7 +209,7 @@ Partial Class Form1
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(20, 13)
         Me.Label8.TabIndex = 17
-        Me.Label8.Text = "C1"
+        Me.Label8.Text = "C2"
         '
         'Label9
         '
@@ -218,7 +218,7 @@ Partial Class Form1
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(20, 13)
         Me.Label9.TabIndex = 16
-        Me.Label9.Text = "B1"
+        Me.Label9.Text = "B2"
         '
         'Label10
         '
@@ -227,42 +227,42 @@ Partial Class Form1
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(20, 13)
         Me.Label10.TabIndex = 15
-        Me.Label10.Text = "A1"
+        Me.Label10.Text = "A2"
         '
-        'NumericUpDown6
+        'nmrE2
         '
-        Me.NumericUpDown6.Location = New System.Drawing.Point(257, 139)
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown6.TabIndex = 14
+        Me.nmrE2.Location = New System.Drawing.Point(257, 139)
+        Me.nmrE2.Name = "nmrE2"
+        Me.nmrE2.Size = New System.Drawing.Size(55, 20)
+        Me.nmrE2.TabIndex = 14
         '
-        'NumericUpDown7
+        'nmrD2
         '
-        Me.NumericUpDown7.Location = New System.Drawing.Point(196, 139)
-        Me.NumericUpDown7.Name = "NumericUpDown7"
-        Me.NumericUpDown7.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown7.TabIndex = 13
+        Me.nmrD2.Location = New System.Drawing.Point(196, 139)
+        Me.nmrD2.Name = "nmrD2"
+        Me.nmrD2.Size = New System.Drawing.Size(55, 20)
+        Me.nmrD2.TabIndex = 13
         '
-        'NumericUpDown8
+        'nmrC2
         '
-        Me.NumericUpDown8.Location = New System.Drawing.Point(135, 139)
-        Me.NumericUpDown8.Name = "NumericUpDown8"
-        Me.NumericUpDown8.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown8.TabIndex = 12
+        Me.nmrC2.Location = New System.Drawing.Point(135, 139)
+        Me.nmrC2.Name = "nmrC2"
+        Me.nmrC2.Size = New System.Drawing.Size(55, 20)
+        Me.nmrC2.TabIndex = 12
         '
-        'NumericUpDown9
+        'mnrB2
         '
-        Me.NumericUpDown9.Location = New System.Drawing.Point(74, 139)
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown9.TabIndex = 11
+        Me.mnrB2.Location = New System.Drawing.Point(74, 139)
+        Me.mnrB2.Name = "mnrB2"
+        Me.mnrB2.Size = New System.Drawing.Size(55, 20)
+        Me.mnrB2.TabIndex = 11
         '
-        'NumericUpDown10
+        'nmrA2
         '
-        Me.NumericUpDown10.Location = New System.Drawing.Point(13, 139)
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown10.TabIndex = 10
+        Me.nmrA2.Location = New System.Drawing.Point(13, 139)
+        Me.nmrA2.Name = "nmrA2"
+        Me.nmrA2.Size = New System.Drawing.Size(55, 20)
+        Me.nmrA2.TabIndex = 10
         '
         'Label11
         '
@@ -271,7 +271,7 @@ Partial Class Form1
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(20, 13)
         Me.Label11.TabIndex = 29
-        Me.Label11.Text = "E1"
+        Me.Label11.Text = "E3"
         '
         'Label12
         '
@@ -280,7 +280,7 @@ Partial Class Form1
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(21, 13)
         Me.Label12.TabIndex = 28
-        Me.Label12.Text = "D1"
+        Me.Label12.Text = "D3"
         '
         'Label13
         '
@@ -289,7 +289,7 @@ Partial Class Form1
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(20, 13)
         Me.Label13.TabIndex = 27
-        Me.Label13.Text = "C1"
+        Me.Label13.Text = "C3"
         '
         'Label14
         '
@@ -298,7 +298,7 @@ Partial Class Form1
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(20, 13)
         Me.Label14.TabIndex = 26
-        Me.Label14.Text = "B1"
+        Me.Label14.Text = "B3"
         '
         'Label15
         '
@@ -307,42 +307,42 @@ Partial Class Form1
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(20, 13)
         Me.Label15.TabIndex = 25
-        Me.Label15.Text = "A1"
+        Me.Label15.Text = "A3"
         '
-        'NumericUpDown11
+        'nmrE3
         '
-        Me.NumericUpDown11.Location = New System.Drawing.Point(257, 192)
-        Me.NumericUpDown11.Name = "NumericUpDown11"
-        Me.NumericUpDown11.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown11.TabIndex = 24
+        Me.nmrE3.Location = New System.Drawing.Point(257, 192)
+        Me.nmrE3.Name = "nmrE3"
+        Me.nmrE3.Size = New System.Drawing.Size(55, 20)
+        Me.nmrE3.TabIndex = 24
         '
-        'NumericUpDown12
+        'nmrD3
         '
-        Me.NumericUpDown12.Location = New System.Drawing.Point(196, 192)
-        Me.NumericUpDown12.Name = "NumericUpDown12"
-        Me.NumericUpDown12.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown12.TabIndex = 23
+        Me.nmrD3.Location = New System.Drawing.Point(196, 192)
+        Me.nmrD3.Name = "nmrD3"
+        Me.nmrD3.Size = New System.Drawing.Size(55, 20)
+        Me.nmrD3.TabIndex = 23
         '
-        'NumericUpDown13
+        'nmrC3
         '
-        Me.NumericUpDown13.Location = New System.Drawing.Point(135, 192)
-        Me.NumericUpDown13.Name = "NumericUpDown13"
-        Me.NumericUpDown13.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown13.TabIndex = 22
+        Me.nmrC3.Location = New System.Drawing.Point(135, 192)
+        Me.nmrC3.Name = "nmrC3"
+        Me.nmrC3.Size = New System.Drawing.Size(55, 20)
+        Me.nmrC3.TabIndex = 22
         '
-        'NumericUpDown14
+        'nmrB3
         '
-        Me.NumericUpDown14.Location = New System.Drawing.Point(74, 192)
-        Me.NumericUpDown14.Name = "NumericUpDown14"
-        Me.NumericUpDown14.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown14.TabIndex = 21
+        Me.nmrB3.Location = New System.Drawing.Point(74, 192)
+        Me.nmrB3.Name = "nmrB3"
+        Me.nmrB3.Size = New System.Drawing.Size(55, 20)
+        Me.nmrB3.TabIndex = 21
         '
-        'NumericUpDown15
+        'nmrA3
         '
-        Me.NumericUpDown15.Location = New System.Drawing.Point(13, 192)
-        Me.NumericUpDown15.Name = "NumericUpDown15"
-        Me.NumericUpDown15.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown15.TabIndex = 20
+        Me.nmrA3.Location = New System.Drawing.Point(13, 192)
+        Me.nmrA3.Name = "nmrA3"
+        Me.nmrA3.Size = New System.Drawing.Size(55, 20)
+        Me.nmrA3.TabIndex = 20
         '
         'Label16
         '
@@ -351,7 +351,7 @@ Partial Class Form1
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(20, 13)
         Me.Label16.TabIndex = 39
-        Me.Label16.Text = "E1"
+        Me.Label16.Text = "E4"
         '
         'Label17
         '
@@ -360,7 +360,7 @@ Partial Class Form1
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(21, 13)
         Me.Label17.TabIndex = 38
-        Me.Label17.Text = "D1"
+        Me.Label17.Text = "D4"
         '
         'Label18
         '
@@ -369,7 +369,7 @@ Partial Class Form1
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(20, 13)
         Me.Label18.TabIndex = 37
-        Me.Label18.Text = "C1"
+        Me.Label18.Text = "C4"
         '
         'Label19
         '
@@ -378,7 +378,7 @@ Partial Class Form1
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(20, 13)
         Me.Label19.TabIndex = 36
-        Me.Label19.Text = "B1"
+        Me.Label19.Text = "B4"
         '
         'Label20
         '
@@ -387,42 +387,42 @@ Partial Class Form1
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(20, 13)
         Me.Label20.TabIndex = 35
-        Me.Label20.Text = "A1"
+        Me.Label20.Text = "A4"
         '
-        'NumericUpDown16
+        'nmrE4
         '
-        Me.NumericUpDown16.Location = New System.Drawing.Point(257, 245)
-        Me.NumericUpDown16.Name = "NumericUpDown16"
-        Me.NumericUpDown16.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown16.TabIndex = 34
+        Me.nmrE4.Location = New System.Drawing.Point(257, 245)
+        Me.nmrE4.Name = "nmrE4"
+        Me.nmrE4.Size = New System.Drawing.Size(55, 20)
+        Me.nmrE4.TabIndex = 34
         '
-        'NumericUpDown17
+        'nmrD4
         '
-        Me.NumericUpDown17.Location = New System.Drawing.Point(196, 245)
-        Me.NumericUpDown17.Name = "NumericUpDown17"
-        Me.NumericUpDown17.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown17.TabIndex = 33
+        Me.nmrD4.Location = New System.Drawing.Point(196, 245)
+        Me.nmrD4.Name = "nmrD4"
+        Me.nmrD4.Size = New System.Drawing.Size(55, 20)
+        Me.nmrD4.TabIndex = 33
         '
-        'NumericUpDown18
+        'nmrC4
         '
-        Me.NumericUpDown18.Location = New System.Drawing.Point(135, 245)
-        Me.NumericUpDown18.Name = "NumericUpDown18"
-        Me.NumericUpDown18.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown18.TabIndex = 32
+        Me.nmrC4.Location = New System.Drawing.Point(135, 245)
+        Me.nmrC4.Name = "nmrC4"
+        Me.nmrC4.Size = New System.Drawing.Size(55, 20)
+        Me.nmrC4.TabIndex = 32
         '
-        'NumericUpDown19
+        'nmrB4
         '
-        Me.NumericUpDown19.Location = New System.Drawing.Point(74, 245)
-        Me.NumericUpDown19.Name = "NumericUpDown19"
-        Me.NumericUpDown19.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown19.TabIndex = 31
+        Me.nmrB4.Location = New System.Drawing.Point(74, 245)
+        Me.nmrB4.Name = "nmrB4"
+        Me.nmrB4.Size = New System.Drawing.Size(55, 20)
+        Me.nmrB4.TabIndex = 31
         '
-        'NumericUpDown20
+        'nmrA4
         '
-        Me.NumericUpDown20.Location = New System.Drawing.Point(13, 245)
-        Me.NumericUpDown20.Name = "NumericUpDown20"
-        Me.NumericUpDown20.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown20.TabIndex = 30
+        Me.nmrA4.Location = New System.Drawing.Point(13, 245)
+        Me.nmrA4.Name = "nmrA4"
+        Me.nmrA4.Size = New System.Drawing.Size(55, 20)
+        Me.nmrA4.TabIndex = 30
         '
         'Label21
         '
@@ -431,7 +431,7 @@ Partial Class Form1
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(20, 13)
         Me.Label21.TabIndex = 49
-        Me.Label21.Text = "E1"
+        Me.Label21.Text = "E5"
         '
         'Label22
         '
@@ -440,7 +440,7 @@ Partial Class Form1
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(21, 13)
         Me.Label22.TabIndex = 48
-        Me.Label22.Text = "D1"
+        Me.Label22.Text = "D5"
         '
         'Label23
         '
@@ -449,7 +449,7 @@ Partial Class Form1
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(20, 13)
         Me.Label23.TabIndex = 47
-        Me.Label23.Text = "C1"
+        Me.Label23.Text = "C5"
         '
         'Label24
         '
@@ -458,7 +458,7 @@ Partial Class Form1
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(20, 13)
         Me.Label24.TabIndex = 46
-        Me.Label24.Text = "B1"
+        Me.Label24.Text = "B5"
         '
         'Label25
         '
@@ -467,42 +467,42 @@ Partial Class Form1
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(20, 13)
         Me.Label25.TabIndex = 45
-        Me.Label25.Text = "A1"
+        Me.Label25.Text = "A5"
         '
-        'NumericUpDown21
+        'nmrE5
         '
-        Me.NumericUpDown21.Location = New System.Drawing.Point(257, 296)
-        Me.NumericUpDown21.Name = "NumericUpDown21"
-        Me.NumericUpDown21.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown21.TabIndex = 44
+        Me.nmrE5.Location = New System.Drawing.Point(257, 296)
+        Me.nmrE5.Name = "nmrE5"
+        Me.nmrE5.Size = New System.Drawing.Size(55, 20)
+        Me.nmrE5.TabIndex = 44
         '
-        'NumericUpDown22
+        'nmrD5
         '
-        Me.NumericUpDown22.Location = New System.Drawing.Point(196, 296)
-        Me.NumericUpDown22.Name = "NumericUpDown22"
-        Me.NumericUpDown22.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown22.TabIndex = 43
+        Me.nmrD5.Location = New System.Drawing.Point(196, 296)
+        Me.nmrD5.Name = "nmrD5"
+        Me.nmrD5.Size = New System.Drawing.Size(55, 20)
+        Me.nmrD5.TabIndex = 43
         '
-        'NumericUpDown23
+        'nmrC5
         '
-        Me.NumericUpDown23.Location = New System.Drawing.Point(135, 296)
-        Me.NumericUpDown23.Name = "NumericUpDown23"
-        Me.NumericUpDown23.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown23.TabIndex = 42
+        Me.nmrC5.Location = New System.Drawing.Point(135, 296)
+        Me.nmrC5.Name = "nmrC5"
+        Me.nmrC5.Size = New System.Drawing.Size(55, 20)
+        Me.nmrC5.TabIndex = 42
         '
-        'NumericUpDown24
+        'nmrB5
         '
-        Me.NumericUpDown24.Location = New System.Drawing.Point(74, 296)
-        Me.NumericUpDown24.Name = "NumericUpDown24"
-        Me.NumericUpDown24.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown24.TabIndex = 41
+        Me.nmrB5.Location = New System.Drawing.Point(74, 296)
+        Me.nmrB5.Name = "nmrB5"
+        Me.nmrB5.Size = New System.Drawing.Size(55, 20)
+        Me.nmrB5.TabIndex = 41
         '
-        'NumericUpDown25
+        'nmrA5
         '
-        Me.NumericUpDown25.Location = New System.Drawing.Point(13, 296)
-        Me.NumericUpDown25.Name = "NumericUpDown25"
-        Me.NumericUpDown25.Size = New System.Drawing.Size(55, 20)
-        Me.NumericUpDown25.TabIndex = 40
+        Me.nmrA5.Location = New System.Drawing.Point(13, 296)
+        Me.nmrA5.Name = "nmrA5"
+        Me.nmrA5.Size = New System.Drawing.Size(55, 20)
+        Me.nmrA5.TabIndex = 40
         '
         'Label26
         '
@@ -550,88 +550,88 @@ Partial Class Form1
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.NumericUpDown21)
-        Me.Controls.Add(Me.NumericUpDown22)
-        Me.Controls.Add(Me.NumericUpDown23)
-        Me.Controls.Add(Me.NumericUpDown24)
-        Me.Controls.Add(Me.NumericUpDown25)
+        Me.Controls.Add(Me.nmrE5)
+        Me.Controls.Add(Me.nmrD5)
+        Me.Controls.Add(Me.nmrC5)
+        Me.Controls.Add(Me.nmrB5)
+        Me.Controls.Add(Me.nmrA5)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.NumericUpDown16)
-        Me.Controls.Add(Me.NumericUpDown17)
-        Me.Controls.Add(Me.NumericUpDown18)
-        Me.Controls.Add(Me.NumericUpDown19)
-        Me.Controls.Add(Me.NumericUpDown20)
+        Me.Controls.Add(Me.nmrE4)
+        Me.Controls.Add(Me.nmrD4)
+        Me.Controls.Add(Me.nmrC4)
+        Me.Controls.Add(Me.nmrB4)
+        Me.Controls.Add(Me.nmrA4)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.NumericUpDown11)
-        Me.Controls.Add(Me.NumericUpDown12)
-        Me.Controls.Add(Me.NumericUpDown13)
-        Me.Controls.Add(Me.NumericUpDown14)
-        Me.Controls.Add(Me.NumericUpDown15)
+        Me.Controls.Add(Me.nmrE3)
+        Me.Controls.Add(Me.nmrD3)
+        Me.Controls.Add(Me.nmrC3)
+        Me.Controls.Add(Me.nmrB3)
+        Me.Controls.Add(Me.nmrA3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.NumericUpDown6)
-        Me.Controls.Add(Me.NumericUpDown7)
-        Me.Controls.Add(Me.NumericUpDown8)
-        Me.Controls.Add(Me.NumericUpDown9)
-        Me.Controls.Add(Me.NumericUpDown10)
+        Me.Controls.Add(Me.nmrE2)
+        Me.Controls.Add(Me.nmrD2)
+        Me.Controls.Add(Me.nmrC2)
+        Me.Controls.Add(Me.mnrB2)
+        Me.Controls.Add(Me.nmrA2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.NumericUpDown5)
-        Me.Controls.Add(Me.NumericUpDown4)
-        Me.Controls.Add(Me.NumericUpDown3)
-        Me.Controls.Add(Me.NumericUpDown2)
-        Me.Controls.Add(Me.NumericUpDown1)
+        Me.Controls.Add(Me.nmrE1)
+        Me.Controls.Add(Me.nmrD1)
+        Me.Controls.Add(Me.nmrC1)
+        Me.Controls.Add(Me.nmrB1)
+        Me.Controls.Add(Me.nmrA1)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrD1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrE1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrE2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrD2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrC2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mnrB2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrA2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrE3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrD3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrC3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrB3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrA3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrE4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrD4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrC4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrB4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrA4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrE5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrD5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents NumericUpDown2 As NumericUpDown
-    Friend WithEvents NumericUpDown3 As NumericUpDown
-    Friend WithEvents NumericUpDown4 As NumericUpDown
-    Friend WithEvents NumericUpDown5 As NumericUpDown
+    Friend WithEvents nmrA1 As NumericUpDown
+    Friend WithEvents nmrB1 As NumericUpDown
+    Friend WithEvents nmrC1 As NumericUpDown
+    Friend WithEvents nmrD1 As NumericUpDown
+    Friend WithEvents nmrE1 As NumericUpDown
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -642,41 +642,41 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents NumericUpDown6 As NumericUpDown
-    Friend WithEvents NumericUpDown7 As NumericUpDown
-    Friend WithEvents NumericUpDown8 As NumericUpDown
-    Friend WithEvents NumericUpDown9 As NumericUpDown
-    Friend WithEvents NumericUpDown10 As NumericUpDown
+    Friend WithEvents nmrE2 As NumericUpDown
+    Friend WithEvents nmrD2 As NumericUpDown
+    Friend WithEvents nmrC2 As NumericUpDown
+    Friend WithEvents mnrB2 As NumericUpDown
+    Friend WithEvents nmrA2 As NumericUpDown
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents NumericUpDown11 As NumericUpDown
-    Friend WithEvents NumericUpDown12 As NumericUpDown
-    Friend WithEvents NumericUpDown13 As NumericUpDown
-    Friend WithEvents NumericUpDown14 As NumericUpDown
-    Friend WithEvents NumericUpDown15 As NumericUpDown
+    Friend WithEvents nmrE3 As NumericUpDown
+    Friend WithEvents nmrD3 As NumericUpDown
+    Friend WithEvents nmrC3 As NumericUpDown
+    Friend WithEvents nmrB3 As NumericUpDown
+    Friend WithEvents nmrA3 As NumericUpDown
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents NumericUpDown16 As NumericUpDown
-    Friend WithEvents NumericUpDown17 As NumericUpDown
-    Friend WithEvents NumericUpDown18 As NumericUpDown
-    Friend WithEvents NumericUpDown19 As NumericUpDown
-    Friend WithEvents NumericUpDown20 As NumericUpDown
+    Friend WithEvents nmrE4 As NumericUpDown
+    Friend WithEvents nmrD4 As NumericUpDown
+    Friend WithEvents nmrC4 As NumericUpDown
+    Friend WithEvents nmrB4 As NumericUpDown
+    Friend WithEvents nmrA4 As NumericUpDown
     Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
-    Friend WithEvents NumericUpDown21 As NumericUpDown
-    Friend WithEvents NumericUpDown22 As NumericUpDown
-    Friend WithEvents NumericUpDown23 As NumericUpDown
-    Friend WithEvents NumericUpDown24 As NumericUpDown
-    Friend WithEvents NumericUpDown25 As NumericUpDown
+    Friend WithEvents nmrE5 As NumericUpDown
+    Friend WithEvents nmrD5 As NumericUpDown
+    Friend WithEvents nmrC5 As NumericUpDown
+    Friend WithEvents nmrB5 As NumericUpDown
+    Friend WithEvents nmrA5 As NumericUpDown
     Friend WithEvents Label26 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
