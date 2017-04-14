@@ -144,6 +144,18 @@ Color.YellowGreen
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim letters As String() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"}
+        For letterIndex As Integer = 0 To 5
+            For i As Integer = 1 To 5
+                Dim ctrl = Me.Controls.Find("nmr" & letters(letterIndex) & i, True)
+                If ctrl IsNot Nothing Then
+                    For Each control In ctrl
+                        control.Text = "100"
 
+                    Next
+                End If
+            Next
+        Next
+        Console.WriteLine("===============")
     End Sub
 End Class
