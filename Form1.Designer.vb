@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.nmrA1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrB1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrC1 = New System.Windows.Forms.NumericUpDown()
@@ -76,6 +77,13 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.com1 = New System.IO.Ports.SerialPort(Me.components)
+        Me.DataSet1 = New System.Data.DataSet()
+        Me.DataTable1 = New System.Data.DataTable()
+        Me.DataColumn1 = New System.Data.DataColumn()
+        Me.DataColumn2 = New System.Data.DataColumn()
+        Me.DataColumn3 = New System.Data.DataColumn()
+        Me.DataColumn4 = New System.Data.DataColumn()
         CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,6 +109,8 @@ Partial Class Form1
         CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'nmrA1
@@ -522,7 +532,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(218, 361)
+        Me.Button1.Location = New System.Drawing.Point(237, 361)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 52
@@ -535,6 +545,35 @@ Partial Class Form1
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(165, 23)
         Me.ProgressBar1.TabIndex = 53
+        '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "ConfigManager"
+        Me.DataSet1.Tables.AddRange(New System.Data.DataTable() {Me.DataTable1})
+        '
+        'DataTable1
+        '
+        Me.DataTable1.Columns.AddRange(New System.Data.DataColumn() {Me.DataColumn1, Me.DataColumn2, Me.DataColumn3, Me.DataColumn4})
+        Me.DataTable1.Constraints.AddRange(New System.Data.Constraint() {New System.Data.UniqueConstraint("Constraint1", New String() {"id"}, True)})
+        Me.DataTable1.PrimaryKey = New System.Data.DataColumn() {Me.DataColumn3}
+        Me.DataTable1.TableName = "config"
+        '
+        'DataColumn1
+        '
+        Me.DataColumn1.ColumnName = "name"
+        '
+        'DataColumn2
+        '
+        Me.DataColumn2.ColumnName = "strValue"
+        '
+        'DataColumn3
+        '
+        Me.DataColumn3.ColumnName = "id"
+        '
+        'DataColumn4
+        '
+        Me.DataColumn4.ColumnName = "boolValue"
+        Me.DataColumn4.DataType = GetType(Boolean)
         '
         'Form1
         '
@@ -622,6 +661,8 @@ Partial Class Form1
         CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -681,4 +722,11 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents com1 As IO.Ports.SerialPort
+    Friend WithEvents DataSet1 As DataSet
+    Friend WithEvents DataTable1 As DataTable
+    Friend WithEvents DataColumn1 As DataColumn
+    Friend WithEvents DataColumn2 As DataColumn
+    Friend WithEvents DataColumn3 As DataColumn
+    Friend WithEvents DataColumn4 As DataColumn
 End Class
