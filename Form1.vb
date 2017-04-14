@@ -162,7 +162,12 @@
         Dim maxValue As Integer = FindMaxValueInRockers()
 
         For reps = 1 To repetitionsInThisEvent
-            For Each control In nmrUpDownControlers
+            For runningValue As Integer = 0 To maxValue
+                For Each control In nmrUpDownControlers
+                    If control.Value = runningValue Then
+                        Console.WriteLine(control.Name.Substring(3, 2) & ":" & control.Value)
+                    End If
+                Next
             Next
 
             lblStatusText.Text = "Iteracion " & reps & " completada de " & repetitionsInThisEvent
@@ -177,7 +182,6 @@
         Dim currentMaximum As Integer = 0
         For Each control In nmrUpDownControlers
             If currentMaximum < control.Value Then currentMaximum = control.Value
-            control.BackColor = Color.Tomato
         Next
         FindMaxValueInRockers = currentMaximum
     End Function
