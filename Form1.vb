@@ -103,7 +103,7 @@
         Call asignColor(sender)
         sender.ForeColor = Color.Gainsboro
     End Sub
-    Private Sub asignColor(ByRef target)
+    Private Sub AsignColor(ByRef target)
         Try
 
             If Not TypeOf target Is NumericUpDown Then
@@ -112,14 +112,10 @@
 
             If target.value < colors.length Then
                 Dim newColor = colors(Val(target.value))
-                Dim a As Byte = newColor.A
-                a = normToRange(a + 128, 0, 256)
-                Dim r As Byte = newColor.R
-                r = normToRange(r + 128, 0, 256)
-                Dim g As Byte = newColor.G
-                g = normToRange(g + 128, 0, 256)
-                Dim b As Byte = newColor.B
-                b = normToRange(b + 128, 0, 256)
+                Dim a As Byte = normToRange(newColor.A + 128, 0, 256)
+                Dim r As Byte = normToRange(newColor.R + 128, 0, 256)
+                Dim g As Byte = normToRange(newColor.G + 128, 0, 256)
+                Dim b As Byte = normToRange(newColor.B + 128, 0, 256)
                 target.BackColor = Color.FromArgb(r, g, b)
                 target.forecolor = newColor
             End If
@@ -127,8 +123,8 @@
             MsgBox(ex.Message)
         End Try
     End Sub
-    Public Function normToRange(val, min, max)
-        normToRange = val Mod max
+    Public Function NormToRange(val, min, max)
+        NormToRange = val Mod max
     End Function
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -145,17 +141,27 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim letters As String() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"}
-        For letterIndex As Integer = 0 To 5
-            For i As Integer = 1 To 5
-                Dim ctrl = Me.Controls.Find("nmr" & letters(letterIndex) & i, True)
-                If ctrl IsNot Nothing Then
-                    For Each control In ctrl
-                        control.Text = "100"
+        Dim repetitionsInThisEvent = nmrRepeticiones.Value
 
-                    Next
-                End If
+        lblStatusText.Text = "Iniciando iteraciones"
+        ToolStripProgressBar.Value = 0
+
+        For reps = 1 To repetitionsInThisEvent
+            For letterIndex As Integer = 0 To 5
+                For i As Integer = 1 To 5
+                    Dim ctrl = Me.Controls.Find("nmr" & letters(letterIndex) & i, True)
+                    If ctrl IsNot Nothing Then
+                        For Each control In ctrl
+                            control.Text = "100"
+
+                        Next
+                    End If
+                Next
             Next
+            lblStatusText.Text = "Iteracion " & reps & " completada de " & repetitionsInThisEvent
+            ToolStripProgressBar.Value = (repetitionsInThisEvent / 100) * reps
+            MsgBox("Iteracion " & reps & " completada", MsgBoxStyle.OkCancel, "Informacion")
         Next
-        Console.WriteLine("===============")
+        lblStatusText.Text = "Iteraciones completadas"
     End Sub
 End Class

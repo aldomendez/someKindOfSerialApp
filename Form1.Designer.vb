@@ -74,16 +74,18 @@ Partial Class Form1
         Me.nmrB5 = New System.Windows.Forms.NumericUpDown()
         Me.nmrA5 = New System.Windows.Forms.NumericUpDown()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.com1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.DataSet1 = New System.Data.DataSet()
+        Me.configMgrDataSet = New System.Data.DataSet()
         Me.DataTable1 = New System.Data.DataTable()
         Me.DataColumn1 = New System.Data.DataColumn()
         Me.DataColumn2 = New System.Data.DataColumn()
         Me.DataColumn3 = New System.Data.DataColumn()
         Me.DataColumn4 = New System.Data.DataColumn()
+        Me.nmrRepeticiones = New System.Windows.Forms.NumericUpDown()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.lblStatusText = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripProgressBar = New System.Windows.Forms.ToolStripProgressBar()
         CType(Me.nmrA1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrC1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,8 +111,10 @@ Partial Class Form1
         CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.configMgrDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrRepeticiones, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'nmrA1
@@ -517,39 +521,25 @@ Partial Class Form1
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(12, 19)
+        Me.Label26.Location = New System.Drawing.Point(10, 21)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(69, 13)
         Me.Label26.TabIndex = 50
         Me.Label26.Text = "Repeticiones"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(87, 12)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox1.TabIndex = 51
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(237, 361)
+        Me.Button1.Location = New System.Drawing.Point(237, 340)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 52
         Me.Button1.Text = "Enviar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'ProgressBar1
+        'configMgrDataSet
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(13, 361)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(165, 23)
-        Me.ProgressBar1.TabIndex = 53
-        '
-        'DataSet1
-        '
-        Me.DataSet1.DataSetName = "ConfigManager"
-        Me.DataSet1.Tables.AddRange(New System.Data.DataTable() {Me.DataTable1})
+        Me.configMgrDataSet.DataSetName = "ConfigManager"
+        Me.configMgrDataSet.Tables.AddRange(New System.Data.DataTable() {Me.DataTable1})
         '
         'DataTable1
         '
@@ -568,6 +558,7 @@ Partial Class Form1
         '
         'DataColumn3
         '
+        Me.DataColumn3.AllowDBNull = False
         Me.DataColumn3.ColumnName = "id"
         '
         'DataColumn4
@@ -575,14 +566,40 @@ Partial Class Form1
         Me.DataColumn4.ColumnName = "boolValue"
         Me.DataColumn4.DataType = GetType(Boolean)
         '
+        'nmrRepeticiones
+        '
+        Me.nmrRepeticiones.Location = New System.Drawing.Point(87, 17)
+        Me.nmrRepeticiones.Name = "nmrRepeticiones"
+        Me.nmrRepeticiones.Size = New System.Drawing.Size(55, 20)
+        Me.nmrRepeticiones.TabIndex = 54
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblStatusText, Me.ToolStripProgressBar})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 382)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(332, 22)
+        Me.StatusStrip1.TabIndex = 55
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'lblStatusText
+        '
+        Me.lblStatusText.Name = "lblStatusText"
+        Me.lblStatusText.Size = New System.Drawing.Size(0, 17)
+        '
+        'ToolStripProgressBar
+        '
+        Me.ToolStripProgressBar.Name = "ToolStripProgressBar"
+        Me.ToolStripProgressBar.Size = New System.Drawing.Size(100, 16)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(332, 404)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.nmrRepeticiones)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label22)
@@ -661,8 +678,11 @@ Partial Class Form1
         CType(Me.nmrC5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrB5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrA5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.configMgrDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrRepeticiones, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -719,14 +739,16 @@ Partial Class Form1
     Friend WithEvents nmrB5 As NumericUpDown
     Friend WithEvents nmrA5 As NumericUpDown
     Friend WithEvents Label26 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents com1 As IO.Ports.SerialPort
-    Friend WithEvents DataSet1 As DataSet
+    Friend WithEvents configMgrDataSet As DataSet
     Friend WithEvents DataTable1 As DataTable
     Friend WithEvents DataColumn1 As DataColumn
     Friend WithEvents DataColumn2 As DataColumn
     Friend WithEvents DataColumn3 As DataColumn
     Friend WithEvents DataColumn4 As DataColumn
+    Friend WithEvents nmrRepeticiones As NumericUpDown
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents lblStatusText As ToolStripStatusLabel
+    Friend WithEvents ToolStripProgressBar As ToolStripProgressBar
 End Class
